@@ -48,7 +48,7 @@
    cd DynamicProgramming
    ```
 
-3. Запустите пример (например, `Fibonacci.java`):
+3. Запустите пример (например, `Tribonacci.java`):
 
    ```bash
    javac Tribonacci.java
