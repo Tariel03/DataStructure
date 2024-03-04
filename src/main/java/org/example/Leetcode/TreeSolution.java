@@ -88,13 +88,13 @@ public class TreeSolution {
             return;
         }
 
-        Queue<TreeNode> queue = new LinkedList<>();
+        LinkedList<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
 
         int level = 0;
 
         while (!queue.isEmpty()) {
-            int levelSize = queue.size();
+            int levelSize = queue.size(); // very important  to make it create before, don't use q.size() in for i!
             System.out.print("Level " + (level + 1) + ": ");
 
             for (int i = 0; i < levelSize; i++) {

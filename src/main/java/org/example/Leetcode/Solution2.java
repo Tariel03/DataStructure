@@ -4,6 +4,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class Solution2 {
 
@@ -48,6 +49,58 @@ public class Solution2 {
             }
         }
         return "";
+    }
+
+    public String[] findRelativeRanks(int[] score) {
+        PriorityQueue<Integer> q = new PriorityQueue<Integer> ((a,b) -> b-a);
+        for(int n : score){
+            q.add(n);
+        }
+        int max = q.remove();
+        int secondMax = q.remove();
+        int thirdMax = q.remove();
+        String[] a = new String[score.length];
+        for(int i = 0 ; i<score.length;i++){
+            if(!q.isEmpty()){
+                if(score[i] == max){
+                    a[i] = "Gold Medal";
+                }
+                else if(score[i] == secondMax){
+                    a[i] = "Silver Medal";
+                }
+                else if(score[i] == thirdMax){
+                    a[i] = "Bronze Medal";
+                }else{
+                    a[i]= String.valueOf(score[i]);
+                }
+            }
+        }
+        return a;
+    }
+
+    public int thirdMax(int[] nums) {
+        long max = Long.MIN_VALUE;
+        long secondMax = Long.MIN_VALUE;
+        long thirdMax = Long.MIN_VALUE;
+        for(int num : nums){
+            if(num > max){
+                thirdMax = secondMax;
+                secondMax = max;
+                max = num;
+            }
+            if(num > secondMax && max > num){
+                thirdMax = secondMax;
+                secondMax = num;
+            }
+            if(num > thirdMax && secondMax > num){
+                thirdMax = num;
+            }
+
+        }   
+
+        if(thirdMax == Integer.MIN_VALUE) return (int) max ;
+        return  (int) thirdMax;
+
     }
 
 }
