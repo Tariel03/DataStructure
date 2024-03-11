@@ -1,10 +1,7 @@
 package org.example.Leetcode;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Solution2 {
 
@@ -96,11 +93,34 @@ public class Solution2 {
                 thirdMax = num;
             }
 
-        }   
-
+        }
         if(thirdMax == Integer.MIN_VALUE) return (int) max ;
         return  (int) thirdMax;
 
     }
+        public String reverseOnlyLetters(String s) {
+            StringBuilder builder = new StringBuilder(s);
+            int left = 0;
+            int right = s.length() - 1;
+            while (left < right) {
+                if (Character.isLetter(s.charAt(left)) && Character.isLetter(s.charAt(right))) {
+                    char temp = s.charAt(left);
+                    builder.setCharAt(left, s.charAt(right));
+                    builder.setCharAt(right, temp);
+                    left++;
+                    right--;
+                }
+                if (!Character.isLetter(s.charAt(left))) {
+                    left++;
+                }
+                if (!Character.isLetter(s.charAt(right))) {
+                    right--;
+                }
+            }
+            return builder.toString();
+        }
+
+
+
 
 }

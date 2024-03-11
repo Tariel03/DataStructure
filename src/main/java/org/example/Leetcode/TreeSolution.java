@@ -40,6 +40,7 @@ public class TreeSolution {
 
         while (!queue.isEmpty()) {
             TreeNode currentNode = queue.poll();
+
             System.out.print(currentNode.val + " ");
 
             if (currentNode.left != null) {
