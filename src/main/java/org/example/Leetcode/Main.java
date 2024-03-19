@@ -192,6 +192,9 @@ public class Main {
         System.out.println(tribonacci.memoTribonacci(235, new HashMap<>()));
 
 
+        int aa = Integer.parseInt("011",2);
+        System.out.println(aa);
+
 
 
     }

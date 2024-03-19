@@ -8,6 +8,7 @@ public class DMain {
         SumSquares sumSquares= new SumSquares();
         System.out.println(sumSquares.sumSquares(1011, new HashMap<>()));
 
+
     }
 
 }

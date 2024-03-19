@@ -120,6 +120,34 @@ public class Solution2 {
             return builder.toString();
         }
 
+    public int kthGrammar(int n, int k) {
+        String srt = "0";
+        for(int i = 0; i<n;i++){
+            transform(srt);
+        }
+        int a = Integer.parseInt(String.valueOf(srt.charAt(k-1)));
+        return a;
+
+    }
+    private void transform(String str){
+        StringBuilder builder = new StringBuilder(str);
+        for(int i = 0; i<builder.length(); i+=2){
+            if(builder.charAt(i) == '0'){
+                builder.setCharAt(i, '0');
+                builder.setCharAt(i+1, '1');
+
+            }
+            else if(builder.charAt(i) == '1'){
+                builder.setCharAt(i, '1');
+                builder.setCharAt(i+1, '0');
+
+            }
+
+        }
+        str = builder.toString();
+
+    }
+
 
 
 
