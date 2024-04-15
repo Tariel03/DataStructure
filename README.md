@@ -1,4 +1,71 @@
+# Learning Algorithms and Data Structures in Java
 
+This project is created for studying various algorithmic approaches and data structures in the Java programming language. It focuses on the following topics:
+
+- **Dynamic Programming**: Learning methods for solving problems using dynamic programming to optimize solutions.
+- **Sliding Window**: Working with the sliding window approach to optimize time complexity for problem-solving.
+- **Sorting**: Implementations of various sorting algorithms for efficient data manipulation.
+- **Prefix Sum**: Exploring methods for working with prefix sums to optimize time complexity when dealing with data arrays.
+- **Data Structures**:
+    - **ListNode**: Working with singly and doubly linked lists.
+    - **Tree**: Exploring different types of trees such as Binary Search Trees (BST), AVL trees, Red-Black trees, and others.
+    - **Trie**: Investigating trie data structures for efficient storage and retrieval of words and sequences.
+- **Bitwise Operations**: Studying bitwise operations for performing various operations on data at the bit level.
+- **Two Pointers**: Learning problem-solving methods that use two pointers to optimize data manipulation.
+- **Memoization**: Understanding the application of memoization to optimize recursive algorithms by storing the results of intermediate computations.
+
+## Project Structure
+
+1. **DynamicProgramming**: Contains examples of problems and solutions based on dynamic programming methods.
+2. **SlidingWindow**: This directory contains implementations of methods using the sliding window technique for problem-solving.
+3. **Sorting**: Contains implementations of various sorting algorithms.
+4. **PrefixSum**: Examples of using prefix sums to optimize algorithms are gathered here.
+5. **DataStructures**: Contains implementations of various data structures.
+    - **ListNode**: Implementations of singly and doubly linked lists.
+    - **Tree**: Implementations of different tree structures.
+    - **Trie**: Examples of trie data structures.
+6. **BitwiseOperations**: Contains examples of using bitwise operations.
+7. **TwoPointers**: Examples of solutions using two pointers are located here.
+8. **Memoization**: Examples of using memoization to optimize recursive algorithms are gathered in this directory.
+
+## Usage
+
+Each directory contains a set of Java source code files with examples of algorithms and data structures. You can study their contents, compile them, and experiment to better understand the core concepts underlying each topic.
+
+## Example Execution
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Tariel03/DataStructure.git
+   ```
+
+2. Navigate to the desired directory (e.g., `DynamicProgramming`):
+
+   ```bash
+   cd DynamicProgramming
+   ```
+
+3. Run an example (e.g., `Tribonacci.java`):
+
+   ```bash
+   javac Tribonacci.java
+   java Tribonacci
+   ```
+
+## Additional Resources
+
+If further explanations or deeper understanding of each topic is needed, you can refer to the following resources:
+
+- [Wikipedia Article on Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming)
+- [Wikipedia Article on Sliding Window (algorithm)](https://en.wikipedia.org/wiki/Sliding_window_protocol)
+- [Wikipedia Article on Sorting Algorithms](https://en.wikipedia.org/wiki/Sorting_algorithm)
+- [Wikipedia Article on Prefix Sums](https://en.wikipedia.org/wiki/Prefix_sum)
+- [Wikipedia Article on Data Structures](https://en.wikipedia.org/wiki/Data_structure)
+- [Wikipedia Article on Bitwise Operations](https://en.wikipedia.org/wiki/Bitwise_operation)
+- [Wikipedia Article on Two-pointer Algorithm](https://en.wikipedia.org/wiki/Two-pointer_algorithm)
+- [Wikipedia Article on Memoization](https://en.wikipedia.org/wiki/Memoization)
+  ___________________________________________________________________________________________________________________________________________________________________________________
 
 # Изучение алгоритмов и структур данных на Java
 
